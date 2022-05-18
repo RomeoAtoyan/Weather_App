@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+}
+
+body {
+  background-image: url(http://wallpapers.net/beautiful-dark-sunset-hd-wallpaper/download/3840x2160.jpg);
+  background-size: cover;
+}
+
+.weather_container {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 40px 40px 40px black;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: 100px auto;
+  width: 900px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.city {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.city p {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 5px;
+}
+
+.weather_main {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  font-size: 100px;
+}
+
+#tempInC {
+  margin: 50px 0 0 15px;
+  text-align: center;
+}
+
+#weather_text {
+  font-size: 20px;
+}
+
+.weather_description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 40px;
+}
+
+.weather_humidity,
+.weather_feel {
+  border-radius: 25px;
+  margin-top: 50px;
+  width: max-content;
+  padding: 20px;
+}
+
+.weather_text {
+  width: max-content;
+  height: 50px;
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 40px 40px 40px black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  height: 60px;
+  margin: 25px auto;
+  border-radius: 25px;
+}
+
+.input #cityInput {
+  width: 80%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.input #cityInput::placeholder {
+  text-align: center;
+  font-size: large;
+}
+
+.input #cityInput:focus {
+  color: white;
+  outline: transparent;
+  text-align: center;
+  font-size: large;
+}
+
+.input #searchBtn {
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}

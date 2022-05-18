@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7b5b136bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="input">
+        <label for="favCity"></label>
+        <button id="searchBtn" class="tempChange">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </button>
+        <input type="text" placeholder="Search for your City" id="cityInput">
+        </input>
+    </div>
+    <div class="weather_container">
+       <div class="city tempChange">
+        <p id="location">Brussels</p>
+       </div>
+       <div class="weather_main">
+           <p id="tempInC">15</p>
+           <div class="weather_description">
+               <div class="weather_humidity">
+                   <p>Humidity</p>
+                   <p id="humidity">47%</p>
+               </div>
+               <div class="weather_text tempChange">
+                   <p id="currentText">Sunny</p>
+               </div>
+               <div class="weather_feel">
+                   <p>Feels Like</p>
+                   <p id="feel">18<span>&deg</span></p>
+               </div>
+           </div>
+       </div>
+    <script src="app.js"></script>
+</body>
+</html>
