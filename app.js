@@ -1,4 +1,4 @@
-let temp = document.getElementById("tempInC");
+let temperature = document.getElementById("tempInC");
 let humidity = document.getElementById("humidity");
 let text = document.getElementById("currentText");
 let feel = document.getElementById("feel");
@@ -20,7 +20,7 @@ function getData(city) {
         let location_value = data.location.name;
         let text_value = data.current.condition.text;
 
-        temp.innerHTML = Math.round(temp_value) + "&deg";
+        temperature.innerHTML = Math.round(temp_value) + "&deg";
         humidity.innerHTML = humidity_value + "%";
         feel.innerHTML = Math.round(feel_value) + "&deg";
         currLocation.innerHTML = location_value;
